@@ -402,12 +402,12 @@
          </div>
          <form class="form__join-soc">
             <label class="footer__modal-text" for="user-email">
-               <p class="footer__tittel-modal">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-               <input type="email" class="footer__modal" name="user-email" autocomplete="off" placeholder="E-mail"
-                  required />
+               <span class="footer__tittel-modal">ПОДПИШИТЕСЬ НА РАССЫЛКУ</span>
+               <input type="email" class="footer__modal" id="user-email" name="user-email" autocomplete="off"
+                  placeholder="E-mail" required />
             </label>
             <label for="button__soc" class="form__submit">
-               <button type="submit" name="button__soc" class="button__join-soc">Подписаться
+               <button type="submit" id="button__soc" name="button__soc" class="button__join-soc">Подписаться
                   <svg class="footer__soc-icon" width="24" height="24">
                      <use href="./images/icons.svg/symbol-defs.svg#icon-icon-telegram"></use>
                   </svg>
@@ -451,12 +451,12 @@
             <div class="check">
                <input type="checkbox" class="form-input visually-hidden" name="hobby" id="hobby">
                <label class="wrapper_checkbox" for="hobby">
-                  <span>
-                     <svg class="check-icon" for="check" width="16" height="15">
+                  <span class="check_block">
+                     <svg class="check-icon" width="16" height="15">
                         <use href="./images/icons.svg/symbol-defs.svg#icon-check-vector-icon"></use>
                      </svg>
                   </span>
-                  Соглашаюсь с рассылкой и принимаю <p class="check__text"> Условия договора</p></label>
+                  Соглашаюсь с рассылкой и принимаю <span class="check__text"> Условия договора</span></label>
             </div>
             <button type="submit" class="modal__button">Отправить</button>
          </form>

@@ -645,6 +645,7 @@ li.footer__item:first-child {
    text-transform: uppercase;
    color: var(--mainWhite);
    margin-bottom: 20px;
+   display: block;
 }
 
 .button__join-soc {
@@ -750,6 +751,7 @@ input::placeholder {
    height: 30px;
    border-radius: 50%;
    border: 1px solid rgba(0, 0, 0, 0.1);
+   background-color: var(--mainWhite);
    display: flex;
    align-items: center;
    justify-content: center;
@@ -762,6 +764,10 @@ input::placeholder {
 
 .backdrop__close-icon:hover,
 .backdrop__close-icon:focus {
+   fill: var(--acentColor);
+}
+
+.modal__button-close:hover .backdrop__close-icon {
    fill: var(--acentColor);
 }
 
@@ -869,7 +875,7 @@ textarea::placeholder {
    cursor: pointer;
 }
 
-.wrapper_checkbox span {
+.wrapper_checkbox .check_block {
    width: 16px;
    height: 15px;
    border: 2px solid var(--mainTitleColor);
@@ -879,12 +885,12 @@ textarea::placeholder {
    color: var(--mainTextColor);
 }
 
-.form-input:checked + .wrapper_checkbox span {
+.form-input:checked + .wrapper_checkbox .check_block {
    background-color: var(--acentColor);
    border: transparent;
 }
 
-.form-input:focus + .wrapper_checkbox span {
+.form-input:focus + .wrapper_checkbox .check_block {
    border-color: var(--acentColor);
 }
 
